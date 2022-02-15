@@ -29,7 +29,7 @@ namespace DiamanteDeX.ConsoleApp
                 }
                 else if (i <= metade)
                 {
-                    x = x + "xx";
+                    x += "xx";
                     for (int j = 1; j <= (metade - i); j++)
                     {
                         Console.Write(espaco);
@@ -51,14 +51,14 @@ namespace DiamanteDeX.ConsoleApp
                 }
                 else if (i > metade)
                 {
-                    x = x + "xx";
+                    x += "xx";
                     for (int k = i - metade; k > 0; k--)
                     {
                         Console.Write(espaco);
                     }
                     for (int j = 2; j <= (numero - i); j++)
                     {
-                        x = x + "xx";
+                        x += "xx";
                     }
                     Console.WriteLine(x);
                 }
