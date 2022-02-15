@@ -6,20 +6,21 @@ namespace DiamanteDeX.ConsoleApp
     {
         static void Main(string[] args)
         {
-            int numero;
+        //entrada
+            int n;
             do
             {
                 Console.Write("Digite um número inteiro e ímpar: ");
-                numero = Convert.ToInt32(Console.ReadLine());
-            } while (numero % 2 == 0);
+                n = Convert.ToInt32(Console.ReadLine());
+            } while (n % 2 == 0);
 
-            int metade = (numero - 1) / 2;
+        //processamento e saída
+            int metade = (n - 1) / 2;
 
             int x = 1;
-            for (int i = metade; i > 0; i--)
+            for (int i = metade; i > 0; i--)//ponta de cima do diamante
             {
-
-                for (int espaco = 1; espaco <= i; espaco++)
+                for (int j = 1; j <= i; j++)
                 {
                     Console.Write(" ");
                 }
@@ -30,19 +31,18 @@ namespace DiamanteDeX.ConsoleApp
                 }
                 x = x + 2;
                 Console.WriteLine();
-
             }
 
-            for (int i = 0; i < numero; i++)
+            for (int i = 0; i < n; i++)
             {
                 Console.Write("x");
             }
             Console.WriteLine();
 
-            x = numero - 2;
-            for (int i = metade; i > 0; i--)
+            x = n - 2;
+            for (int i = metade; i > 0; i--)//ponta de baixo do diamante
             {
-                for (int espaco = i; espaco <= metade; espaco++)
+                for (int j = i; j <= metade; j++)
                 {
                     Console.Write(" ");
                 }
@@ -53,7 +53,6 @@ namespace DiamanteDeX.ConsoleApp
                 x = x - 2;
                 Console.WriteLine();
             }
-
         }
     }
 }
