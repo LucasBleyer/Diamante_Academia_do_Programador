@@ -1,4 +1,4 @@
-# Desafio Diamante Academia do Programador
+Diamante de X Academia do Programador
 Diamante de X (ACSII Art)
 
 Dado um número ímpar, exiba um diamante desenhado com a letra ‘x’.
